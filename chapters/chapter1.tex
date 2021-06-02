@@ -1,0 +1,98 @@
+
+
+\chapter{Analyse des besoins}
+Dans l'analyse des besoins on prend compte les nécessités de l'application et du client en analysant les fonctionnalités demandées en établissant un cahier des charges
+
+\section{Cahier des charges}
+Un cahier des charges est la première étape dans chaque projet, il
+sert à formaliser les besoins et à les expliquer aux différents acteurs pour s’assurer que tout le monde soit d’accord.
+
+\subsection{Identification des acteurs et leurs besoins}
+Un acteur, autrement dit utilisateur, est une personne qui engage avec le système, soit d'une façon direct ou indirect.
+
+\begin{enumerate}
+	\item \textcolor{red}{Administrateur}: Il est le garant du développement, déroulement  et de l'évolution du site.\\
+	Il peut:
+	\begin{itemize}
+		\item Gérer les comptes des utilisateurs (Ajouter, Modifier, Bloquer, Supprimer).
+		\item Gérer les appels d’offres et les soumissions (Ajouter, Modifier, Supprimer).
+		\item Gérer les réclamations et les signalements.
+	\end{itemize}
+
+	\item \textcolor{red}{Visiteur}: Qui entre sur le site pour la première fois avant d'ouvrir un compte.\\
+	Il peut:
+	\begin{itemize}
+		\item Consulter site  via une application web ou mobile.
+		\item S'inscrire dans le site pour devenir un client.
+		\item Consulter la liste et les profils des artisans.
+	\end{itemize}
+
+	\item \textcolor{red}{Client}: Visiteur ayant un compte.\\
+	Il peut:
+	\begin{itemize}
+		\item Gérer son profil.
+		\item Consulter la liste et les profils des artisans.
+		\item Poster un appel d’offre.
+		\item Gérer ses appels d’offres (Modifier ou Supprimer).
+		\item Gérer les soumissions des artisans pour un appel d’offre.
+		\item Demander le service d’un artisan.
+		\item Évaluer le service d’un artisan.
+		\item Signaler un artisan et soumettre une réclamation.
+	\end{itemize}
+
+	\item \textcolor{red}{Artisan}: Qui possède un métier, que ce soit maçon, couvreur, plombier, tapissier, chauffagiste, coiffeur, fleuriste, tailleur$\dots$\\
+	Il peut:
+	\begin{itemize}
+		\item Gérer son profile.
+		\item Consulter des appels d’offres.
+		\item Soumettre des appels d’offres.
+		\item Gérer soumissions (Modifier ou Supprimer).
+		\item Évaluer un client.
+		\item Signaler un client.
+	\end{itemize}
+\end{enumerate}
+
+\subsection{Besoins non-fonctionnels}
+Les besoins non-fonctionnels sont des nécessités non-visible pour l'utilisateur mais sont nécessaires pour avoir une douce expérience dans l'application.\\
+\begin{itemize}
+\item Le système doit être disponible tout le temps.
+\item Le système doit être facile a utiliser.
+\item Temps de réponse très court.
+\item Les mots de passe sont stockés de manière sécurisée.
+\item Le système suffisamment intuitif pour faciliter l’opération au client.
+\end{itemize}
+
+
+\pagebreak
+\section{Spécification des besoins}
+La spécification des besoins et le premier document produit dans le chapitre d'analyse, elle consiste a décrire les fonctionnalités et leurs contraintes d'une façon simple et lisible a fin de pouvoir les communiquer facilement
+
+\subsection{Diagramme Cas D'utilisation}
+Un diagramme de cas d'utilisation nous permet de visualiser les besoins / fonctionnalités de l'application d'une façon abstraite.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.15]{UseCase.jpg}
+\caption{Diagramme cas d'utilisation}
+\label{fig:use case}
+\end{figure}
+
+
+\section{Descriptions et D.S}
+Une description textuelle ou autrement dit fiche descriptive est une autre façon de communiquer les besoins du projet, elle sert à mieux clarifier le cas cité dans le diagramme cas d'utilisation.
+Elle cite:\\
+ - Un scénario nominal dans laquelle l'exécution se déroule comme prévu sans erreurs.\\
+ - Un scénario alternatif dans laquelle l'exécution a eu un problème ou le déroulement a échoué.
+ - Un scénario d'erreur ou l'exécution s'arrête complètement.
+ 
+Un diagramme de séquence prend la description textuelle vers un niveau d'abstraction communicable et compréhensible pour mieux clarifier le cas d'utilisation avec la moindre verbosité
+
+\input{chapters/diagrammes}
+
+\section{Conclusion}
+Dans ce chapitre, nous avons présenté l’analyse des besoins dont on identifient les acteurs / utilisateurs qui interagissent avec notre future application suivi par la spécification des besoins fonctionnels et techniques(non-fonctionnels), modélisés sous forme des diagrammes.\\
+
+On finalise par la description détaillée et les diagrammes de séquences des cas dont on a jugé important ou intéressant.
+
+\vspace{0.01\textheight}
+On se basant sur les descriptions et diagrammes précédents, on entame le deuxième chapitre du conception

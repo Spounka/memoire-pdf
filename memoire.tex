@@ -1,0 +1,92 @@
+\documentclass[12pt,french]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[a4paper,right=2.5cm,left=2.5cm,bottom=2.5cm, inner=2.5cm,outer=2.5cm]{geometry}
+\usepackage{babel}
+\usepackage{blindtext}
+\usepackage{multirow}
+\usepackage{placeins}
+\usepackage{array}
+\usepackage{float}
+\usepackage{tikz}
+\usetikzlibrary{shadows}
+\usepackage{xcolor,colortbl}
+
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+
+\graphicspath{{images}}
+
+\pagestyle{fancy}
+
+\newcommand{\thedate}{\today}
+
+
+\begin{document}
+	\begin{titlepage}
+		\begin{center}
+			\large Algérienne Démocratique et Populaire\\
+			
+			\large Ministère de l’Enseignement Supérieur et de la Recherche Scientifique
+			
+			\large Université Constantine 2 – AbdelHamid Mehri\\
+			
+			\vspace{0.01\textheight}
+			\includegraphics[width=0.2\textheight]{logo.jpg}\\
+			
+			Faculté des Nouvelles Technologies de l’Information et de la Communication\\
+			Département des Technologies des Logiciels et Systèmes d’Information\\
+			
+			\vspace{0.025\textheight}
+			\par\noindent\rule{10cm}{3pt}\\
+			\vspace{0.05\textheight}
+			
+			\large{Projet de fin d’études pour l’obtention du diplôme de Licence en Informatique}\\
+			
+			\vspace{0.025\textheight}
+			Option: Génie Logiciel\\
+			
+			\vspace{0.025\textheight}			
+			\textbf{\large{Thème}}
+			
+			\vspace{0.025\textheight}			
+			\begin{tikzpicture}
+				\node [copy shadow={fill=black,shadow xshift=0.5ex,shadow yshift=-0.5ex},
+				fill=white,draw=black,thick,font=\bfseries] {\textbf{\LARGE Application pour embaucher des artisans}};
+			\end{tikzpicture}
+		\end{center}
+	
+		\vspace{0.05\textheight}
+
+		\begin{tabular}{l l}
+			\Large Dirigé par & \Large Réalisé par\\
+			\multirow{1}{24em}{\large{- Dr. LAKHDARA Zakaria}} & \large{- Boudaakkar Nazih}\\
+			& \large{- Bekakria Abir}\\
+			& \large{- Fermas Manar}\\
+		\end{tabular}
+		\vspace{4.3em}
+		
+		\centering
+		- Session Juin 2021 -
+	\end{titlepage}
+\tableofcontents
+\listoffigures
+\listoftables
+
+\pagebreak
+\include{chapters/introduction}
+\include{chapters/chapter1}
+\include{chapters/chapter2}
+
+
+\end{document}
